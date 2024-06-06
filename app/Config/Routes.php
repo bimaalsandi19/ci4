@@ -21,4 +21,6 @@ $routes->get('/pages/about', 'Pages::about');
 $routes->get('/pages/contact', 'Pages::contact');
 
 $routes->get('/komik', 'Komik::index');
-$routes->get('/komik/(:segment)', 'Komik::detail/$1');
+$routes->get('/komik/detail/(:segment)', 'Komik::detail/$1');
+$routes->get('/komik/create', 'Komik::create');
+$routes->post('/komik/store', 'Komik::store');

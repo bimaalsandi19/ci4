@@ -12,7 +12,7 @@ class KomikModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['judul', 'slug', 'penulis', 'penerbit', 'sampul'];
 
     protected bool $allowEmptyInserts = false;
 
