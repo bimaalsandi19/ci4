@@ -21,7 +21,7 @@
                             <td scope="row"><?= $no++; ?></td>
                             <td><img src="/img/<?= $rk['sampul']; ?>" alt="" width=" 100"></td>
                             <td><?= $rk['judul']; ?></td>
-                            <td><a href="" class="btn btn-success">Detail</a></td>
+                            <td><a href="/komik/<?= $rk['slug']; ?>" class="btn btn-success">Detail</a></td>
                         </tr>
 
                     <?php endforeach ?>
